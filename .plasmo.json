@@ -1,0 +1,14 @@
+{
+  "manifest": {
+    "host_permissions": [
+      "https://api.solanatracker.io/*",
+      "https://api.helius.xyz/*"
+    ],
+    "permissions": [
+      "storage",
+      "tabs",
+      "alarms"
+    ],
+    "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA..."
+  }
+}
