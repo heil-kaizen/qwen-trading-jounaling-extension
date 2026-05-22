@@ -27,5 +27,8 @@
   },
   "devDependencies": {
     "@plasmohq/storage": "^1.11.0"
+  },
+  "overrides": {
+    "@parcel/watcher": "2.4.1"
   }
 }
