@@ -1,43 +1,49 @@
 {
   "name": "tradereflect",
-  "version": "1.0.0",
-  "description": "Behavioral trading journal for Solana traders",
+  "displayName": "TradeReflect",
+  "version": "0.1.0",
+  "description": "A Solana wallet behavioral trading journal Chrome extension.",
+  "author": "TradeReflect",
+  "license": "UNLICENSED",
+  "private": true,
   "scripts": {
     "dev": "plasmo dev",
     "build": "plasmo build",
-    "package": "plasmo package"
+    "package": "plasmo package",
+    "typecheck": "tsc --noEmit"
   },
   "dependencies": {
-    "@solana/web3.js": "^1.87.6",
-    "bs58": "^5.0.0",
     "idb": "^8.0.0",
-    "plasmo": "^0.88.0",
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0",
-    "zustand": "^4.5.0"
+    "plasmo": "^0.90.5",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "zustand": "^4.5.5"
   },
   "devDependencies": {
-    "@plasmohq/storage": "^1.11.0"
-  },
-  "overrides": {
-    "@parcel/watcher": "2.4.1"
-    "@types/chrome": "^0.0.258",
-    "@types/node": "^20.11.5",
-    "@types/react": "^18.2.48",
-    "@types/react-dom": "^18.2.18",
-    "autoprefixer": "^10.4.17",
-    "postcss": "^8.4.33",
-    "tailwindcss": "^3.4.1",
-    "typescript": "^5.3.3"
+    "@types/chrome": "^0.0.287",
+    "@types/node": "^22.10.2",
+    "@types/react": "^18.3.18",
+    "@types/react-dom": "^18.3.5",
+    "autoprefixer": "^10.4.20",
+    "postcss": "^8.4.49",
+    "svgo": "^3.3.3",
+    "tailwindcss": "^3.4.17",
+    "typescript": "^5.7.2"
   },
   "manifest": {
-    "host_permissions": [
-      "https://api.solscan.io/*",
-      "https://mainnet.helius-rpc.com/*"
-    ],
+    "manifest_version": 3,
+    "name": "TradeReflect",
+    "short_name": "TradeReflect",
+    "description": "Turns Solana wallet trades into structured behavioral trading journal records.",
     "permissions": [
+      "alarms",
+      "activeTab",
       "storage",
-      "alarms"
+      "tabs"
+    ],
+    "host_permissions": [
+      "https://data.solanatracker.io/*",
+      "https://api-mainnet.helius-rpc.com/*"
     ]
   }
 }
