@@ -2,33 +2,18 @@
 # Dependencies
 node_modules/
 
-# Build artifacts
-dist/
-build/
-*.js
-*.ts
-
 # Environment
 .env
 .env.local
-*.env.*
+.env.*
+
+# Logs and temp files
+*.log
+*.tmp
 
 # Editors
 .vscode/
 .idea/
-*.swp
-*.swo
-
-# Logs
-*.log
-
-# Temp files
-*.tmp
-
-# Coverage
-coverage/
-htmlcov/
-.coverage
 
 # Python
 __pycache__/
@@ -36,42 +21,9 @@ __pycache__/
 *.pyo
 *.pyd
 .Python
-*.so
-
-# Compiled
-*.o
-*.obj
-*.a
-*.lib
-*.dll
-*.dylib
-*.exe
-
-# Compressed
-*.zip
-*.gz
-*.tar
-*.tgz
-*.bz2
-*.xz
-*.7z
-*.rar
-*.zst
-*.lz4
-*.lzh
-*.cab
-*.arj
-*.rpm
-*.deb
-*.Z
-*.lz
-*.lzo
-*.tar.gz
-*.tar.bz2
-*.tar.xz
-*.tar.zst
-
-# System
-.DS_Store
-Thumbs.db
+venv/
+.venv/
+.env
+.env.local
+.env.*
 ```
